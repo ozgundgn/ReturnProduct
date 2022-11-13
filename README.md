@@ -1,6 +1,6 @@
 # ReturnProduct
 
-Proje Core, Models, Web Api katmanlarından oluşmaktadır.
+Proje, .Net6 kullanılarak oluşturulan Core, Models, Web Api katmanlarından oluşmaktadır.
 
 ## Core Katmanı
 
@@ -29,6 +29,8 @@ Controller klasöründe;
 - ApiControllerBase classı bulunur. Bu sınıfta ServiceConnetModel tipindeki servislerin instanceleri bulunur. Oluşturulan her bir api controller bu sınıfı miras alarak oluşturulur ve erişilebilecek servisler default olarak controllerda bulunmuş olur.
 
 - ReturnProductController da GetRMADataByRMACodeAsync metodu vardır. GetRMAByCargoBarcodeRequest  modeli ile gelen istekteki CargoBarcode ile istenilen kargo şirketi servisinden ilgili metod ile RMA kodu alınması için istek atılır. Dönen değer boş ya da null değilse RMA kodu ile Mars şirketi servisinde order sorgulaması yapılıp OrderDataModel i temsilen https://dummyjson.com/producs/1 deki ürün bilgisi gösterildi.
+
+
 
 
 
